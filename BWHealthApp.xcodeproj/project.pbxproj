@@ -8,17 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		556AEAAA2C21C4B30086D37F /* BWHealthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEAA92C21C4B30086D37F /* BWHealthAppApp.swift */; };
-		556AEAAC2C21C4B30086D37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEAAB2C21C4B30086D37F /* ContentView.swift */; };
 		556AEAAE2C21C4B40086D37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556AEAAD2C21C4B40086D37F /* Assets.xcassets */; };
 		556AEAB12C21C4B40086D37F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556AEAB02C21C4B40086D37F /* Preview Assets.xcassets */; };
+		556AEAB92C21C4C70086D37F /* BWTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEAB82C21C4C70086D37F /* BWTabView.swift */; };
+		556AEABB2C21C6D00086D37F /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEABA2C21C6D00086D37F /* SummaryView.swift */; };
+		556AEABD2C21C6DE0086D37F /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEABC2C21C6DE0086D37F /* SharingView.swift */; };
+		556AEABF2C21C6EA0086D37F /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEABE2C21C6EA0086D37F /* BrowseView.swift */; };
+		556AEAC32C22B48A0086D37F /* SummaryActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEAC22C22B48A0086D37F /* SummaryActivityView.swift */; };
+		556AEAC62C22B6490086D37F /* HKDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEAC52C22B6490086D37F /* HKDataItem.swift */; };
+		556AEACB2C22B9040086D37F /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEACA2C22B9040086D37F /* HealthManager.swift */; };
+		556AEACE2C22BC500086D37F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEACD2C22BC500086D37F /* Date+Extension.swift */; };
+		556AEAD02C22C8000086D37F /* SummaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEACF2C22C8000086D37F /* SummaryDetailView.swift */; };
+		556AEAD22C22CA290086D37F /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AEAD12C22CA290086D37F /* HealthDataListView.swift */; };
+		556FB6742C22DE9B00FB4749 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6732C22DE9B00FB4749 /* ChartView.swift */; };
+		556FB6762C22E42400FB4749 /* SummaryHealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6752C22E42400FB4749 /* SummaryHealthDataListView.swift */; };
+		556FB6782C22ED4A00FB4749 /* HealthDataDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6772C22ED4A00FB4749 /* HealthDataDetailView.swift */; };
+		556FB67C2C2322F000FB4749 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB67B2C2322F000FB4749 /* Double+Extension.swift */; };
+		556FB67E2C23242D00FB4749 /* HKDataItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB67D2C23242D00FB4749 /* HKDataItemType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		556AEAA62C21C4B30086D37F /* BWHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		556AEAA92C21C4B30086D37F /* BWHealthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWHealthAppApp.swift; sourceTree = "<group>"; };
-		556AEAAB2C21C4B30086D37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		556AEAAD2C21C4B40086D37F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556AEAB02C21C4B40086D37F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		556AEAB82C21C4C70086D37F /* BWTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWTabView.swift; sourceTree = "<group>"; };
+		556AEABA2C21C6D00086D37F /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		556AEABC2C21C6DE0086D37F /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
+		556AEABE2C21C6EA0086D37F /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		556AEAC12C21CE710086D37F /* BWHealthApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = BWHealthApp.entitlements; sourceTree = "<group>"; };
+		556AEAC22C22B48A0086D37F /* SummaryActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryActivityView.swift; sourceTree = "<group>"; };
+		556AEAC52C22B6490086D37F /* HKDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKDataItem.swift; sourceTree = "<group>"; };
+		556AEACA2C22B9040086D37F /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		556AEACD2C22BC500086D37F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		556AEACF2C22C8000086D37F /* SummaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDetailView.swift; sourceTree = "<group>"; };
+		556AEAD12C22CA290086D37F /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
+		556FB6732C22DE9B00FB4749 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		556FB6752C22E42400FB4749 /* SummaryHealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryHealthDataListView.swift; sourceTree = "<group>"; };
+		556FB6772C22ED4A00FB4749 /* HealthDataDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataDetailView.swift; sourceTree = "<group>"; };
+		556FB67B2C2322F000FB4749 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		556FB67D2C23242D00FB4749 /* HKDataItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKDataItemType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +80,12 @@
 		556AEAA82C21C4B30086D37F /* BWHealthApp */ = {
 			isa = PBXGroup;
 			children = (
+				556AEAC12C21CE710086D37F /* BWHealthApp.entitlements */,
 				556AEAA92C21C4B30086D37F /* BWHealthAppApp.swift */,
-				556AEAAB2C21C4B30086D37F /* ContentView.swift */,
+				556AEAC42C22B62A0086D37F /* Models */,
+				556AEAB72C21C4BB0086D37F /* Views */,
+				556AEAC92C22B8F40086D37F /* Utilities */,
+				556AEACC2C22BC3C0086D37F /* Extensions */,
 				556AEAAD2C21C4B40086D37F /* Assets.xcassets */,
 				556AEAAF2C21C4B40086D37F /* Preview Content */,
 			);
@@ -65,6 +98,49 @@
 				556AEAB02C21C4B40086D37F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		556AEAB72C21C4BB0086D37F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				556AEAB82C21C4C70086D37F /* BWTabView.swift */,
+				556AEABA2C21C6D00086D37F /* SummaryView.swift */,
+				556AEABC2C21C6DE0086D37F /* SharingView.swift */,
+				556AEABE2C21C6EA0086D37F /* BrowseView.swift */,
+				556AEAC22C22B48A0086D37F /* SummaryActivityView.swift */,
+				556AEACF2C22C8000086D37F /* SummaryDetailView.swift */,
+				556AEAD12C22CA290086D37F /* HealthDataListView.swift */,
+				556FB6732C22DE9B00FB4749 /* ChartView.swift */,
+				556FB6752C22E42400FB4749 /* SummaryHealthDataListView.swift */,
+				556FB6772C22ED4A00FB4749 /* HealthDataDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		556AEAC42C22B62A0086D37F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				556AEAC52C22B6490086D37F /* HKDataItem.swift */,
+				556FB67D2C23242D00FB4749 /* HKDataItemType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		556AEAC92C22B8F40086D37F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				556AEACA2C22B9040086D37F /* HealthManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		556AEACC2C22BC3C0086D37F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				556AEACD2C22BC500086D37F /* Date+Extension.swift */,
+				556FB67B2C2322F000FB4749 /* Double+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +213,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556AEAAC2C21C4B30086D37F /* ContentView.swift in Sources */,
+				556AEAB92C21C4C70086D37F /* BWTabView.swift in Sources */,
+				556FB6782C22ED4A00FB4749 /* HealthDataDetailView.swift in Sources */,
+				556AEACB2C22B9040086D37F /* HealthManager.swift in Sources */,
+				556AEABB2C21C6D00086D37F /* SummaryView.swift in Sources */,
+				556AEAC32C22B48A0086D37F /* SummaryActivityView.swift in Sources */,
+				556AEAC62C22B6490086D37F /* HKDataItem.swift in Sources */,
+				556FB6762C22E42400FB4749 /* SummaryHealthDataListView.swift in Sources */,
+				556AEABD2C21C6DE0086D37F /* SharingView.swift in Sources */,
+				556FB67C2C2322F000FB4749 /* Double+Extension.swift in Sources */,
+				556FB6742C22DE9B00FB4749 /* ChartView.swift in Sources */,
+				556AEAD02C22C8000086D37F /* SummaryDetailView.swift in Sources */,
+				556AEABF2C21C6EA0086D37F /* BrowseView.swift in Sources */,
 				556AEAAA2C21C4B30086D37F /* BWHealthAppApp.swift in Sources */,
+				556FB67E2C23242D00FB4749 /* HKDataItemType.swift in Sources */,
+				556AEACE2C22BC500086D37F /* Date+Extension.swift in Sources */,
+				556AEAD22C22CA290086D37F /* HealthDataListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -269,26 +359,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BWHealthApp/BWHealthApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BWHealthApp/Preview Content\"";
+				DEVELOPMENT_TEAM = KHQP888VHN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow to read health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bornwest.HealthApp.BWHealthApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bornwest.HealthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,26 +395,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BWHealthApp/BWHealthApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BWHealthApp/Preview Content\"";
+				DEVELOPMENT_TEAM = KHQP888VHN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow to read health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bornwest.HealthApp.BWHealthApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bornwest.HealthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

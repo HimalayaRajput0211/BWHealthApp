@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BWHealthAppApp: App {
+    @StateObject var manager = HealthManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BWTabView()
+                .environmentObject(manager)
         }
     }
 }
