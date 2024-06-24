@@ -60,8 +60,28 @@ struct SummaryView: View {
                         }
                         .padding()
                         .frame(height: 50)
-                        .background(RoundedRectangle(cornerRadius: 10))
-                        .foregroundStyle(.white)
+                        .background(.white, in: RoundedRectangle(cornerRadius: 10))
+
+                        VStack {
+                            NavigationLink {
+                                WheatherGraphView()
+                            } label: {
+                                HStack {
+                                    Image(systemName: "chart.xyaxis.line")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                        .aspectRatio(contentMode: .fit)
+                                        .tint(.red)
+                                    Text("Graphical Wheather Data")
+                                        .font(.headline)
+                                        .foregroundStyle(.gray)
+                                    Spacer()
+                                }
+                            }
+                        }
+                        .padding()
+                        .frame(height: 50)
+                        .background(.white, in: RoundedRectangle(cornerRadius: 10))
                     }
                     .padding()
                     .padding(.bottom, geometry.safeAreaInsets.bottom)

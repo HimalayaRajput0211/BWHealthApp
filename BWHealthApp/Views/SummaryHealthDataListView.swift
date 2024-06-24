@@ -20,6 +20,7 @@ struct SummaryHealthDataListView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var manager: HealthManager
     let item: HKDataItem
+    @State private var shouldAddData = false
 
     var body: some View {
         List {
@@ -51,11 +52,16 @@ struct SummaryHealthDataListView: View {
                     Text(item.type.title)
                 })
             }
-            
+
             ToolbarItem(placement: .topBarTrailing) {
-                Button(action: {}, label: {
+                Button(action: {
+                    shouldAddData.toggle()
+                }, label: {
                     Text("Add Data")
                 })
+                .sheet(isPresented: $shouldAddData) {
+                    AddDataContainerView(item: item)
+                }
             }
         }
         .navigationTitle("All Recorded Data")
@@ -64,9 +70,13 @@ struct SummaryHealthDataListView: View {
             manager.resetListItems()
             manager.fetchAllStepsData(type: item.type)
         }
+        .onDisappear(perform: {
+            manager.stopRunningQuery(with: .addHealthDataQuery)
+        })
     }
 }
 
 #Preview {
     SummaryHealthDataListView(item: HKDataItem(type: .height, time: "12: 00 PM", value: "172"))
+        .environmentObject(HealthManager())
 }

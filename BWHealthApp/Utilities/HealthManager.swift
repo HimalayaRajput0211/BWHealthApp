@@ -8,6 +8,9 @@
 import Foundation
 import HealthKit
 
+enum RunningQueryType: Hashable {
+    case addHealthDataQuery
+}
 
 final class HealthManager: ObservableObject {
     
@@ -15,6 +18,7 @@ final class HealthManager: ObservableObject {
     @Published private(set) var activities = [HKDataItem]()
     @Published private(set) var oneMonthChartData = [DailyStepView]()
     @Published private(set) var listItems = [ListItem]()
+    private var runningQueries: [RunningQueryType : HKQuery] = [:]
     
     
     init() {
@@ -26,7 +30,7 @@ final class HealthManager: ObservableObject {
         
         Task {
             do {
-                try await healthStore.requestAuthorization(toShare: [], read: healthTypes)
+                try await healthStore.requestAuthorization(toShare: healthTypes, read: healthTypes)
                 fetchTodaysSteps()
                 fetchTodaysCalories()
                 fetchWeekRunningStats()
@@ -40,6 +44,14 @@ final class HealthManager: ObservableObject {
 extension HealthManager {
     func resetListItems() {
         listItems = []
+    }
+    
+    func stopRunningQuery(with type: RunningQueryType) {
+        guard let query = runningQueries[type]
+        else { return }
+
+        healthStore.stop(query)
+        runningQueries.removeValue(forKey: type)
     }
 }
 
@@ -104,9 +116,9 @@ extension HealthManager {
     private func fetchWeekRunningStats() {
         let workout = HKSampleType.workoutType()
         let timePredicate = HKQuery.predicateForSamples(withStart: .startOfWeek, end: Date())
-        let workoutPredicate = HKQuery.predicateForWorkouts(with: .running)
-        let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [timePredicate, workoutPredicate])
-        let query = HKSampleQuery(sampleType: workout, predicate: predicate, limit: 10, sortDescriptors: nil) { _, sample, error in
+        //let workoutPredicate = HKQuery.predicateForWorkouts(with: .running)
+        //let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [timePredicate, workoutPredicate])
+        let query = HKSampleQuery(sampleType: workout, predicate: timePredicate, limit: 10, sortDescriptors: nil) { _, sample, error in
             guard let workouts = sample as? [HKWorkout], error == nil  else {
                 print("error fetching total workout data")
                 return
@@ -345,6 +357,27 @@ extension HealthManager {
             onCompletion(items)
         }
         
+        query.statisticsUpdateHandler = { _, _, results, error in
+            guard let unwrappedResults = results else {
+                onCompletion([])
+                return
+            }
+            var items = [ListItem]()
+
+            unwrappedResults.enumerateStatistics(from: .calendarInitialDate, to: Date()) { statistics, stop in
+                if let quantity = statistics.sumQuantity() {
+                    items.insert(
+                        ListItem(value: quantity.doubleValue(for: hkUnit).formattedString(maximumFractionDigits: maximumFractionDigits),
+                                 date: statistics.startDate.formattedDateWithDayMonthYear())
+                        , at: 0
+                    )
+                }
+            }
+
+            onCompletion(items)
+        }
+
+        runningQueries.updateValue(query, forKey: .addHealthDataQuery)
         healthStore.execute(query)
     }
     
@@ -386,5 +419,49 @@ extension HealthManager {
         case .football:
             fetchData(workoutActivityType: .americanFootball)
         }
+    }
+}
+
+// MARK: Saving data
+extension HealthManager {
+    private func save(sample: HKObject, onSuccess: @escaping() -> Void) {
+        healthStore.save(sample) { success, error in
+            guard success, error == nil  else {
+                print("We couldn't save data")
+                return
+            }
+            
+           onSuccess()
+        }
+    }
+
+    func saveQuantityHealthData(type: HKQuantityType, quantity: HKQuantity, startDate: Date,
+                                onSuccess: @escaping() -> Void) {
+        let sample = HKQuantitySample(
+            type: type,
+            quantity: quantity,
+            start: startDate,
+            end: startDate.addingTimeInterval(60*2),
+            device: HKDevice.local(),
+            metadata: nil
+        )
+        save(sample: sample, onSuccess: onSuccess)
+    }
+    
+    func saveWorkoutHealthData(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date,
+                               energyBurned: HKQuantity?, distance: HKQuantity?, 
+                               onSuccess: @escaping() -> Void) {
+        let sample = HKWorkout(
+            activityType: activityType,
+            start: startDate,
+            end: endDate,
+            duration: startDate.distance(to: endDate),
+            totalEnergyBurned: energyBurned,
+            totalDistance: distance,
+            device: HKDevice.local(),
+            metadata: nil
+        )
+        
+        save(sample: sample, onSuccess: onSuccess)
     }
 }

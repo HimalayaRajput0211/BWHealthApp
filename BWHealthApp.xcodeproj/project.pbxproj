@@ -25,6 +25,21 @@
 		556FB6782C22ED4A00FB4749 /* HealthDataDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6772C22ED4A00FB4749 /* HealthDataDetailView.swift */; };
 		556FB67C2C2322F000FB4749 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB67B2C2322F000FB4749 /* Double+Extension.swift */; };
 		556FB67E2C23242D00FB4749 /* HKDataItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB67D2C23242D00FB4749 /* HKDataItemType.swift */; };
+		556FB6832C256A8A00FB4749 /* AddDataContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6822C256A8A00FB4749 /* AddDataContainerView.swift */; };
+		556FB6852C256DAB00FB4749 /* AddQuantityDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6842C256DAB00FB4749 /* AddQuantityDataView.swift */; };
+		556FB6872C256DBA00FB4749 /* AddWorkoutDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6862C256DBA00FB4749 /* AddWorkoutDataView.swift */; };
+		556FB6892C25889D00FB4749 /* WorkoutDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6882C25889D00FB4749 /* WorkoutDataItem.swift */; };
+		556FB68B2C258ABB00FB4749 /* HKWorkoutActivityType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB68A2C258ABB00FB4749 /* HKWorkoutActivityType+Extension.swift */; };
+		556FB68D2C258AD300FB4749 /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB68C2C258AD300FB4749 /* Calendar+Extension.swift */; };
+		556FB6912C25925E00FB4749 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6902C25925E00FB4749 /* NewView.swift */; };
+		556FB6972C287F6600FB4749 /* WheatherGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6962C287F6600FB4749 /* WheatherGraphView.swift */; };
+		556FB6992C287F9A00FB4749 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6982C287F9A00FB4749 /* Workout.swift */; };
+		556FB69B2C287FEA00FB4749 /* GroupBoxStyleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB69A2C287FEA00FB4749 /* GroupBoxStyleHelper.swift */; };
+		556FB69D2C2885A600FB4749 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB69C2C2885A600FB4749 /* Color+Extension.swift */; };
+		556FB6A02C29398400FB4749 /* ChartAxisModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB69F2C29398400FB4749 /* ChartAxisModifier.swift */; };
+		556FB6A22C2939B600FB4749 /* Chart+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6A12C2939B600FB4749 /* Chart+Extension.swift */; };
+		556FB6A52C2939FC00FB4749 /* ChartLegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6A42C2939FC00FB4749 /* ChartLegendView.swift */; };
+		556FB6A72C29754D00FB4749 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556FB6A62C29754D00FB4749 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +63,21 @@
 		556FB6772C22ED4A00FB4749 /* HealthDataDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataDetailView.swift; sourceTree = "<group>"; };
 		556FB67B2C2322F000FB4749 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		556FB67D2C23242D00FB4749 /* HKDataItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKDataItemType.swift; sourceTree = "<group>"; };
+		556FB6822C256A8A00FB4749 /* AddDataContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataContainerView.swift; sourceTree = "<group>"; };
+		556FB6842C256DAB00FB4749 /* AddQuantityDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuantityDataView.swift; sourceTree = "<group>"; };
+		556FB6862C256DBA00FB4749 /* AddWorkoutDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutDataView.swift; sourceTree = "<group>"; };
+		556FB6882C25889D00FB4749 /* WorkoutDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDataItem.swift; sourceTree = "<group>"; };
+		556FB68A2C258ABB00FB4749 /* HKWorkoutActivityType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKWorkoutActivityType+Extension.swift"; sourceTree = "<group>"; };
+		556FB68C2C258AD300FB4749 /* Calendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extension.swift"; sourceTree = "<group>"; };
+		556FB6902C25925E00FB4749 /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		556FB6962C287F6600FB4749 /* WheatherGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherGraphView.swift; sourceTree = "<group>"; };
+		556FB6982C287F9A00FB4749 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		556FB69A2C287FEA00FB4749 /* GroupBoxStyleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxStyleHelper.swift; sourceTree = "<group>"; };
+		556FB69C2C2885A600FB4749 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		556FB69F2C29398400FB4749 /* ChartAxisModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAxisModifier.swift; sourceTree = "<group>"; };
+		556FB6A12C2939B600FB4749 /* Chart+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+Extension.swift"; sourceTree = "<group>"; };
+		556FB6A42C2939FC00FB4749 /* ChartLegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLegendView.swift; sourceTree = "<group>"; };
+		556FB6A62C29754D00FB4749 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +133,8 @@
 		556AEAB72C21C4BB0086D37F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				556FB6A32C2939E900FB4749 /* Brezometer */,
+				556FB6812C256A7200FB4749 /* AddDataViews */,
 				556AEAB82C21C4C70086D37F /* BWTabView.swift */,
 				556AEABA2C21C6D00086D37F /* SummaryView.swift */,
 				556AEABC2C21C6DE0086D37F /* SharingView.swift */,
@@ -113,6 +145,7 @@
 				556FB6732C22DE9B00FB4749 /* ChartView.swift */,
 				556FB6752C22E42400FB4749 /* SummaryHealthDataListView.swift */,
 				556FB6772C22ED4A00FB4749 /* HealthDataDetailView.swift */,
+				556FB6902C25925E00FB4749 /* NewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +155,8 @@
 			children = (
 				556AEAC52C22B6490086D37F /* HKDataItem.swift */,
 				556FB67D2C23242D00FB4749 /* HKDataItemType.swift */,
+				556FB6882C25889D00FB4749 /* WorkoutDataItem.swift */,
+				556FB6982C287F9A00FB4749 /* Workout.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,7 +164,9 @@
 		556AEAC92C22B8F40086D37F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				556FB69E2C29396B00FB4749 /* View Modifiers */,
 				556AEACA2C22B9040086D37F /* HealthManager.swift */,
+				556FB69A2C287FEA00FB4749 /* GroupBoxStyleHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -139,8 +176,40 @@
 			children = (
 				556AEACD2C22BC500086D37F /* Date+Extension.swift */,
 				556FB67B2C2322F000FB4749 /* Double+Extension.swift */,
+				556FB68A2C258ABB00FB4749 /* HKWorkoutActivityType+Extension.swift */,
+				556FB68C2C258AD300FB4749 /* Calendar+Extension.swift */,
+				556FB69C2C2885A600FB4749 /* Color+Extension.swift */,
+				556FB6A12C2939B600FB4749 /* Chart+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		556FB6812C256A7200FB4749 /* AddDataViews */ = {
+			isa = PBXGroup;
+			children = (
+				556FB6822C256A8A00FB4749 /* AddDataContainerView.swift */,
+				556FB6842C256DAB00FB4749 /* AddQuantityDataView.swift */,
+				556FB6862C256DBA00FB4749 /* AddWorkoutDataView.swift */,
+			);
+			path = AddDataViews;
+			sourceTree = "<group>";
+		};
+		556FB69E2C29396B00FB4749 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				556FB69F2C29398400FB4749 /* ChartAxisModifier.swift */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		556FB6A32C2939E900FB4749 /* Brezometer */ = {
+			isa = PBXGroup;
+			children = (
+				556FB6962C287F6600FB4749 /* WheatherGraphView.swift */,
+				556FB6A42C2939FC00FB4749 /* ChartLegendView.swift */,
+				556FB6A62C29754D00FB4749 /* MapView.swift */,
+			);
+			path = Brezometer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,21 +282,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556FB6A02C29398400FB4749 /* ChartAxisModifier.swift in Sources */,
+				556FB68B2C258ABB00FB4749 /* HKWorkoutActivityType+Extension.swift in Sources */,
+				556FB6892C25889D00FB4749 /* WorkoutDataItem.swift in Sources */,
+				556FB6832C256A8A00FB4749 /* AddDataContainerView.swift in Sources */,
 				556AEAB92C21C4C70086D37F /* BWTabView.swift in Sources */,
 				556FB6782C22ED4A00FB4749 /* HealthDataDetailView.swift in Sources */,
 				556AEACB2C22B9040086D37F /* HealthManager.swift in Sources */,
 				556AEABB2C21C6D00086D37F /* SummaryView.swift in Sources */,
+				556FB6972C287F6600FB4749 /* WheatherGraphView.swift in Sources */,
+				556FB6912C25925E00FB4749 /* NewView.swift in Sources */,
+				556FB6A72C29754D00FB4749 /* MapView.swift in Sources */,
 				556AEAC32C22B48A0086D37F /* SummaryActivityView.swift in Sources */,
+				556FB69B2C287FEA00FB4749 /* GroupBoxStyleHelper.swift in Sources */,
+				556FB6872C256DBA00FB4749 /* AddWorkoutDataView.swift in Sources */,
 				556AEAC62C22B6490086D37F /* HKDataItem.swift in Sources */,
 				556FB6762C22E42400FB4749 /* SummaryHealthDataListView.swift in Sources */,
 				556AEABD2C21C6DE0086D37F /* SharingView.swift in Sources */,
 				556FB67C2C2322F000FB4749 /* Double+Extension.swift in Sources */,
 				556FB6742C22DE9B00FB4749 /* ChartView.swift in Sources */,
+				556FB6852C256DAB00FB4749 /* AddQuantityDataView.swift in Sources */,
+				556FB68D2C258AD300FB4749 /* Calendar+Extension.swift in Sources */,
+				556FB69D2C2885A600FB4749 /* Color+Extension.swift in Sources */,
 				556AEAD02C22C8000086D37F /* SummaryDetailView.swift in Sources */,
 				556AEABF2C21C6EA0086D37F /* BrowseView.swift in Sources */,
 				556AEAAA2C21C4B30086D37F /* BWHealthAppApp.swift in Sources */,
+				556FB6A52C2939FC00FB4749 /* ChartLegendView.swift in Sources */,
 				556FB67E2C23242D00FB4749 /* HKDataItemType.swift in Sources */,
+				556FB6A22C2939B600FB4749 /* Chart+Extension.swift in Sources */,
 				556AEACE2C22BC500086D37F /* Date+Extension.swift in Sources */,
+				556FB6992C287F9A00FB4749 /* Workout.swift in Sources */,
 				556AEAD22C22CA290086D37F /* HealthDataListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +450,8 @@
 				DEVELOPMENT_TEAM = KHQP888VHN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow to read health data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow BWHealthApp to write health data ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow BWHealthApp to read health data ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -402,7 +487,8 @@
 				DEVELOPMENT_TEAM = KHQP888VHN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow to read health data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow BWHealthApp to write health data ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow BWHealthApp to read health data ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
