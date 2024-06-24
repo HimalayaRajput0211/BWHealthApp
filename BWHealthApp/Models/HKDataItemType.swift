@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import HealthKit
 
 enum HKDataItemType: String {
     case height
@@ -19,6 +20,25 @@ enum HKDataItemType: String {
     case stairClimbing
     case cycling
     case football
+
+    var activityType: HKWorkoutActivityType {
+        switch self {
+        case .height, .sleep, .steps, .calories:
+            return .other
+        case .running:
+            return .running
+        case .strength:
+            return .traditionalStrengthTraining
+        case .soccer:
+            return .soccer
+        case .stairClimbing:
+            return .stairClimbing
+        case .cycling:
+            return .cycling
+        case .football:
+            return .americanFootball
+        }
+    }
     
 
     var title: String {

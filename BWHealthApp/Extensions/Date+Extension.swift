@@ -75,6 +75,18 @@ extension Date {
 }
 
 extension Date {
+    func formattedDateAndtime() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd MMM yyyy h:mm a"
+        return formatter.string(from: self)
+    }
+
+    func formattedHourMinute() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a"
+        return formatter.string(from: self)
+    }
+
     func formattedDateWithDayMonthYear() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd MMM yyyy"
@@ -122,12 +134,15 @@ extension Date {
     }
 }
 
-extension Calendar {
-    func numberOfDaysBetween(_ from: Date, and to: Date) -> Int? {
-        let fromDate = startOfDay(for: from) // <1>
-        let toDate = startOfDay(for: to) // <2>
-        let numberOfDays = dateComponents([.day], from: fromDate, to: toDate) // <3>
+extension Date {
+    func addTimeComponents(from date: Date) -> Date {
+        let calendar = Calendar.current
+        let timeComponents = calendar.dateComponents([.hour, .minute, .second], from: date)
+        var dateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: self)
+        dateComponents.hour = timeComponents.hour
+        dateComponents.minute = timeComponents.minute
+        dateComponents.second = timeComponents.second
         
-        return numberOfDays.day
+        return calendar.date(from: dateComponents) ?? self
     }
 }
